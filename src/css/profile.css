@@ -1,0 +1,25 @@
+#profile {
+  display: flex;
+  justify-content: center;
+  margin: 15vh 0;
+  width: 100%;
+}
+
+#profile > div > img {
+  width: 100%;
+}
+
+#profile > div > p {
+  width: 100%;
+  margin: 10px 0;
+  text-align: center;
+}
+
+#profile > div > button {
+  width: 100%;
+  height: 32px;
+  font-size: 16px;
+  border: none;
+  color: #ffffff;
+  background-color: #dc3545;
+}

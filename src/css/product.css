@@ -1,0 +1,315 @@
+#details {
+  width: 100%;
+}
+
+#details > img {
+  width: 100%;
+}
+
+#details > div {
+  padding: 20px 24px;
+  width: 100%;
+}
+
+#detail-title {
+  font-size: 24px;
+  font-weight: normal;
+  letter-spacing: 4px;
+  text-align: left;
+  color: #3f3a3a;
+}
+
+#detail-id {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 16px;
+  letter-spacing: 3.2px;
+  text-align: left;
+  color: #bababa;
+}
+
+#detail-price {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 24px;
+  text-align: left;
+  color: #3f3a3a;
+}
+
+#details > div > hr {
+  margin-top: 10px;
+  height: 1px;
+  color: #3f3a3a;
+}
+
+#details > div > form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#details > div > form > button {
+  margin-top: 10px;
+  flex: 1;
+  height: 44px;
+  font-size: 16px;
+  letter-spacing: 3.2px;
+  border: none;
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.detail {
+  display: flex;
+  flex: 1 1 100%;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.detail > p {
+  margin-right: 14px;
+  min-width: 40px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 17px;
+  letter-spacing: 2.8px;
+  text-align: left;
+  color: #3f3a3a;
+}
+
+#detail-colors {
+  display: flex;
+}
+
+.detail-color {
+  margin: 6px 16px;
+  width: 24px;
+  height: 24px;
+  outline: 1px solid #979797;
+}
+
+.detail-color:hover {
+  cursor: pointer;
+}
+
+.detail-color-selected {
+  margin: 0 10px;
+  width: 36px;
+  height: 36px;
+  border: 6px solid #ffffff;
+  outline: 1px solid #979797;
+}
+#detail-sizes {
+  display: flex;
+}
+
+.detail-size {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 12px;
+  width: 34px;
+  height: 34px;
+  border-radius: 17px;
+  background-color: #ececec;
+}
+
+.detail-size:hover {
+  cursor: pointer;
+}
+
+.detail-size-selected {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.detail-size-disable {
+  opacity: 0.2;
+  pointer-events: none;
+}
+
+#detail-stock-tag {
+  display: none;
+}
+
+#detail-stock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 44px;
+  border: 1px solid #979797;
+}
+
+#detail-stock > button {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  border: none;
+  background-color: #ffffff;
+}
+
+#detail-stock > p {
+  flex: 1;
+  text-align: center;
+  color: #8b572a;
+}
+
+.detail-text {
+  font-size: 14px;
+  font-weight: normal;
+  text-align: left;
+  color: #3f3a3a;
+}
+
+#detail-note {
+  margin-top: 40px;
+}
+
+#detail-texture {
+  margin-top: 30px;
+}
+
+#detail-description {
+  white-space: pre;
+}
+
+#detail-wash {
+  margin-top: 30px;
+}
+
+#detail-story {
+  margin-top: 28px;
+}
+
+#detail-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 50px auto;
+  padding: 0 24px;
+  width: 100%;
+}
+
+#detail-images-title {
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+
+#detail-images-title > p {
+  margin-right: 20px;
+  width: 120px;
+  font-size: 16px;
+  font-weight: normal;
+  letter-spacing: 3.2px;
+  text-align: left;
+  color: #8b572a;
+}
+
+#detail-images-title > hr {
+  width: 100%;
+}
+
+.detail-image {
+  margin-top: 28px;
+  width: 100%;
+}
+
+#detail-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 40vh;
+}
+
+@media only screen and (min-width: 1024px) {
+  #details {
+    display: flex;
+    justify-content: center;
+    margin: 65px auto 0;
+  }
+
+  #details > img {
+    flex: 1;
+    max-width: 560px;
+  }
+
+  #details > div {
+    margin-left: 40px;
+    padding: 0;
+    max-width: 360px;
+  }
+
+  #detail-title {
+    font-size: 32px;
+    letter-spacing: 6.4px;
+  }
+
+  #detail-id {
+    margin-top: 12px;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 4px;
+  }
+
+  #detail-price {
+    margin-top: 36px;
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  #details > div > hr {
+    margin-top: 20px;
+  }
+
+  #details > div > form > button {
+    margin-top: 30px;
+    flex: 1;
+    height: 60px;
+    font-size: 20px;
+    letter-spacing: 4px;
+  }
+
+  .detail {
+    display: flex;
+    flex: 1 1 100%;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  .detail > p {
+    min-width: 60px;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 4px;
+  }
+
+  #detail-stock-tag {
+    display: flex;
+  }
+
+  #detail-stock {
+    margin-left: 10px;
+    max-width: 160px;
+  }
+
+  .detail-text {
+    font-size: 20px;
+  }
+
+  #detail-images {
+    margin: 50px auto;
+    padding: 0;
+    max-width: 960px;
+  }
+
+  #detail-images-title > p {
+    margin-right: 40px;
+    font-size: 20px;
+    letter-spacing: 4px;
+  }
+}

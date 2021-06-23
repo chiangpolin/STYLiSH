@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="stylish 2021" />
+    <title>STYLISH 2021</title>
+    <link rel="stylesheet" href="../src/css/index.css" />
+    <link rel="stylesheet" href="../src/css/cart.css" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-WBWYB49K24"
+    ></script>
+    <script src="../src/js/analytics.js"></script>
+  </head>
+  <body>
+    <header>
+      <a class="nav-brand" href="./index.html">
+        <img src="../src/images/logo.png" alt="logo" />
+      </a>
+      <nav class="nav-links">
+        <a href="./index.html?tag=women" class="link link-women">女裝</a>
+        <a href="./index.html?tag=men" class="link link-men">男裝</a>
+        <a href="./index.html?tag=accessories" class="link link-accessories"
+          >配件</a
+        >
+      </nav>
+      <form method="GET" action="../index.html">
+        <input type="text" name="tag" autocomplete="off" />
+      </form>
+      <nav class="nav-icons">
+        <a href="#" id="cart">
+          <div class="nav-icon-cart">
+            <div id="nav-icon-cart-number"><p>0</p></div>
+          </div>
+          <p class="nav-icon-text">購物車</p>
+        </a>
+        <a href="#" id="member">
+          <div class="nav-icon-member"></div>
+          <p class="nav-icon-text">會員</p>
+        </a>
+      </nav>
+    </header>
+    <main>
+      <div>
+        <div class="cart-nav">
+          <p>HOME > BAG</p>
+        </div>
+        <div class="cart-title">
+          <p>購物車(<span id="cart-title-number">0</span>)</p>
+          <div class="cart-title-web">
+            <p>數量</p>
+            <p>單價</p>
+            <p>小計</p>
+          </div>
+          <hr class="hr-mobile" />
+        </div>
+        <div id="cart-container"></div>
+        <div id="cart-service"></div>
+        <div class="cart-reminder">
+          <p>※ 提醒您：</p>
+          <p>● 選擇宅配-請填寫正確收件人資訊，避免包裹配送不達</p>
+          <p>● 選擇超商-請填寫正確收件人姓名(與證件相符)，避免無法領取</p>
+        </div>
+        <div class="cart-title">
+          <p>訂購資料</p>
+          <hr />
+        </div>
+        <div>
+          <div class="cart-information">
+            <p>收件人姓名</p>
+            <input id="username" required />
+          </div>
+          <p id="cart-information-caution">
+            務必填寫完整收件人姓名，避免包裹無法順利簽收
+          </p>
+          <div class="cart-information">
+            <p>電子信箱</p>
+            <input type="email" id="email" required />
+          </div>
+          <div class="cart-information">
+            <p>手機</p>
+            <input id="phone" />
+          </div>
+          <div class="cart-information">
+            <p>地址</p>
+            <input id="address" />
+          </div>
+          <div class="cart-information">
+            <p>配送時間</p>
+            <div class="cart-radio-container">
+              <div class="cart-radio">
+                <input
+                  type="radio"
+                  id="morning"
+                  name="service"
+                  value="morning"
+                  checked
+                />
+                <label for="morning">08:00 - 12:00</label>
+              </div>
+              <div class="cart-radio">
+                <input
+                  type="radio"
+                  id="afternoon"
+                  name="service"
+                  value="afternoon"
+                />
+                <label for="afternoon">14:00 - 18:00</label>
+              </div>
+              <div class="cart-radio">
+                <input
+                  type="radio"
+                  id="anytime"
+                  name="service"
+                  value="anytime"
+                />
+                <label for="anytime">不指定</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cart-title">
+          <p>付款資料</p>
+          <hr />
+        </div>
+        <div>
+          <div class="cart-information">
+            <p>信用卡號碼</p>
+            <div class="tpfield" id="card-number"></div>
+          </div>
+          <div class="cart-information">
+            <p>有效期限</p>
+            <div class="tpfield" id="card-expiration-date"></div>
+          </div>
+          <div class="cart-information">
+            <p>安全碼</p>
+            <div class="tpfield" id="card-ccv"></div>
+          </div>
+          <hr />
+        </div>
+        <div class="cart-total">
+          <div class="cart-total-row">
+            <p>總金額</p>
+            <p>NT. <span id="subtotal"></span></p>
+          </div>
+          <div class="cart-total-row">
+            <p>運費</p>
+            <p>NT. <span id="freight"></span></p>
+          </div>
+          <hr />
+          <div class="cart-total-row">
+            <p>應付金額</p>
+            <p>NT. <span id="total"></span></p>
+          </div>
+          <div class="cart-submit">
+            <button type="button" disabled>確認付款</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div>
+        <nav class="footer-links">
+          <a class="footer-link" href="#">關於 Stylish</a>
+          <a class="footer-link" href="#">服務條款</a>
+          <a class="footer-link" href="#">隱私政策</a>
+          <a class="footer-link" href="#">聯絡我們</a>
+          <a class="footer-link" href="#">FAQ</a>
+        </nav>
+        <div class="footer-icons">
+          <img alt="line" src="../src/images/line.png" />
+          <img alt="twitter" src="../src/images/twitter.png" />
+          <img alt="facebook" src="../src/images/facebook.png" />
+        </div>
+        <div class="footer-rights">&copy; 2021. All rights.reserved.</div>
+      </div>
+    </footer>
+    <script src="../src/js/cart.js" type="module"></script>
+    <script src="../src/js/facebook.js" type="module"></script>
+    <script src="../src/js/tappay.js" type="module"></script>
+    <script src="https://js.tappaysdk.com/tpdirect/v5.5.1"></script>
+  </body>
+</html>
